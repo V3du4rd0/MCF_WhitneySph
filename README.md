@@ -8,7 +8,7 @@ Let _W_ be a Whitney Sphere inmersed in <img src="https://latex.codecogs.com/svg
 
 This equation exhibits some similarities with the standard MCF in <img src="https://latex.codecogs.com/svg.image?\mathbb{R}^{2}">. Therefore, we can adapt our MCF solver ([link](https://github.com/V3du4rd0/AMCF)) for planar curves to solve the previous equation. 
 
-* Whitney Sphere's profile curve is a lemniscate. This one is a two loops curve whose parameter is defined on <img src="https://latex.codecogs.com/svg.image?\left&space;(&space;-\pi&space;,0&space;\right&space;)\cup&space;\left&space;(&space;0,\pi&space;&space;\right&space;)">. Then, we can compute each loop evolution independently.
+* Whitney Sphere's profile curve is a lemniscate. This one has two loops and its parameter can be defined on <img src="https://latex.codecogs.com/svg.image?\left&space;(&space;-\pi&space;,0&space;\right&space;)\cup&space;\left&space;(&space;0,\pi&space;&space;\right&space;)">. Then, we can compute each loop evolution independently.
 
 * The `mod_amcf_14.py` file in our MCF solver ([link](https://github.com/V3du4rd0/AMCF)) contains all the _kernel_ functions to solve the MCF numerically. We modify the `TNK` function by adding the <img src="https://latex.codecogs.com/svg.image?\left&space;(&space;m&plus;1&space;\right&space;)p"> term to the curvature.
 
